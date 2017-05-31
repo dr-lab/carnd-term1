@@ -17,11 +17,11 @@ When we filter the color, we only keep Yellow and White, it is little aggressive
 since some countries may use other colors for lane. But this method help lot o the line 
 detection precision. 
 
-[image1](./test_images_output/solidWhiteRight_white_yellow.jpg "white_yellow")
+![image1](./test_images_output/solidWhiteRight_white_yellow.jpg "white_yellow")
 
-[image2](./test_images_output/solidWhiteRight_gray.jpg "gray")
+![image2](./test_images_output/solidWhiteRight_gray.jpg "gray")
 
-[image3](./test_images_output/solidWhiteRight_blur_gray.jpg "blur gray")
+![image3](./test_images_output/solidWhiteRight_blur_gray.jpg "blur gray")
 
 
 b) Use Canny edge detection, detect the lines
