@@ -16,31 +16,38 @@ a) Filter colors, only keep White and Yellow, gray out and blur the image.
 When we filter the color, we only keep Yellow and White, it is little aggressive, 
 since some countries may use other colors for lane. But this method help lot o the line 
 detection precision. 
-[image1]: ./test_images_output/solidWhiteRight_white_yellow.jpg "white_yellow"
-[image2]: ./test_images_output/solidWhiteRight_gray.jpg "gray"
-[image3]: ./test_images_output/solidWhiteRight_blur_gray.jpg "blur gray"
+
+[image1](./test_images_output/solidWhiteRight_white_yellow.jpg "white_yellow")
+
+[image2](./test_images_output/solidWhiteRight_gray.jpg "gray")
+
+[image3](./test_images_output/solidWhiteRight_blur_gray.jpg "blur gray")
 
 
 b) Use Canny edge detection, detect the lines
 Gt the lines array by Canny edge detection algorithms.
-[image4]: ./test_images_output/solidWhiteRight_edges.jpg "Canny edges"
+
+[image4](./test_images_output/solidWhiteRight_edges.jpg "Canny edges")
 
 c) Scope to the region of interest, which includes the lane lines
 Crop the image to region which we interested in for lane detection. How to crop the region is very empirical, the vertices we use are 
 based on the images/video we have in this assignment. It may not fit all conditions.
-[image5]: ./test_images_output/solidWhiteRight_region_of_interest.jpg "region of interest"
+
+[image5]:(./test_images_output/solidWhiteRight_region_of_interest.jpg "region of interest")
 
 
 d) draw lines within the region of interest
 We first draw the lines we detected in GREEN, then use linear regression, based on the slope, get two average 
 slope lines from bottom to upper region, one on left, another on right. 
-[image6]: ./test_images_output/solidWhiteRight_lines.jpg "lines"
+
+[image6](./test_images_output/solidWhiteRight_lines.jpg "lines")
 
 
 e) mask the lines with the original color image. For better debug and understanding the algorithm
     e1) Use GREEN mark the lines, which may solid, may dotted
     e2) Use RED mark the linear regression line
-[image7]: ./test_images_output/solidWhiteRight_color_lines.jpg "color lines"
+    
+[image7](./test_images_output/solidWhiteRight_color_lines.jpg "color lines")
 
 
 
